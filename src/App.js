@@ -40,14 +40,14 @@ function App() {
   
   return (
     <>
-    <Router basename="/Textutils-React">
+    <Router basename="/">
         <Navbar title= 'TextUtils' modeForm={mode} changeMode={toggleMode}/>{/*navbar component*/}
         <Alert makeAlert={alert} modeForm={mode}/>
          
           
         <div className="container my-3">
           <Routes>
-            <Route exact path="/Textutils-React"
+            <Route exact path="/"
             element = {<TextForm label= 'Text Utility Tools | Word Convertor | Text Tool Area' viewAlert={showAlert} modeForm={mode}/> } />
           </Routes>
         </div>
